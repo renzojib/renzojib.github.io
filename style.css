@@ -318,6 +318,10 @@ article img {
 	width: 70%;
 }
 
+article img:hover {
+	width: 80%;
+}
+
 article h3 {
 	height: 3vh;
 	margin-bottom: 4vh;
@@ -326,5 +330,6 @@ article h3 {
 p.p-portfolio {
 	display: none;
 }
+
 
 }
