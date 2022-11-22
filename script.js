@@ -1,4 +1,3 @@
-
 window.onload = () => {
 	btn = document.getElementById("btn")
 	home = document.getElementById("home")
