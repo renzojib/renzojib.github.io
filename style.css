@@ -14,10 +14,18 @@ body.index {
 	background-size: 100vw 100vh;
 }
 
-nav {
+nav.web-nav {
 	height: 10vh;
 	width: 100vw;
 	margin-top: 4.16vh;
+}
+
+.menu-home {
+	display: none;
+}
+
+nav.mobile-nav {
+	display: none;
 }
 
 
@@ -68,7 +76,6 @@ section.index-s h2, section.index-s article {
 section.index-s button {
 	border: .1vmin solid rgb(255,255,255);
 	border-radius: 10px;
-	
 	height: 3.71vh;
 	margin-left: 11.88vw;
 	/*width: 8.68vw;*/
@@ -108,7 +115,7 @@ p.p-index {
 
 /*Using index page nav styling*/
 
-nav {
+nav.web-nav {
 	position: fixed;
 	z-index: 10;
 }
@@ -185,4 +192,139 @@ img.picture:hover {
 
 article img:hover {
 	width: 25vw;
+}
+/* mobile view begin*/
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+	
+	/* index page*/
+  body.index {
+	background-color: rgb(255,243,235);
+	background-image: none;
+}
+
+span.home {
+	display: inline-block;
+	padding-left: 5vw;
+	width: 48.4vw;
+}
+
+span {
+	display: inline-block;
+	height: 10vh;
+	width: calc(100vw-48.4vw);
+	text-align: center;
+}
+
+img.moon-h {
+	display: none;
+}
+
+img.picture {
+	position: relative;
+	/*height: 20.61vh;*/
+	left: 0;
+	top: 18vh;
+	width: 50vw;
+	margin: 0 25vw;
+
+}
+
+section.index-s {
+	position: relative;
+	left: 0;
+	top: 25vh;
+	width: 80vw;
+	margin: 0 10vw;
+}
+
+section.index-s button {
+	border: .1vmin solid rgb(170,115,76);
+	background-color: rgb(170,115,76);
+	border-radius: 15px;
+	height: 3.71vh;
+	margin: 0 40%;
+	width: 28%;
+}
+
+p.p-index {
+	position: relative;
+	left: 0;
+	top: 32vh;
+	text-align: center;
+}
+
+@keyframes animgm {
+	from {width: 50vw;}
+	to {width: 50vw;
+	transform: rotate(360deg);}
+}
+
+img.picture:hover {
+	animation-name: animgm;
+	animation-duration: 2s;
+}
+
+.text-spectral {
+	font-family: Spectral, Georgia, Serif;
+}
+.text-poppins {
+	font-family: Poppins;
+}
+
+.text-sb {
+	font-weight: 700;
+}
+
+.text-m {
+	font-weight: 500;
+}
+
+.text-fs2 {
+	font-size: 3vmin;
+}
+
+.text-fs3 {
+	font-size: 4vmin;
+}
+
+.text-fs5 {
+	font-size: 5vmin;
+}
+
+/*Projects page*/
+
+/*Using index page nav styling*/
+
+img.moon-f {
+	position: fixed;
+	left: 4vw;
+	top: 10.35vh;
+	/*height: 19.82vh;*/
+	width: 18vw;
+}
+
+section.s-portfolio {
+	position: absolute;
+	left: 23vw;
+	top: 18vh;
+	width: 65vw;
+}
+
+article img {
+	border: .vmin solid rgb(255,243,235);
+	border-radius: 10px;
+	margin-left: 10%;
+	width: 70%;
+}
+
+article h3 {
+	height: 3vh;
+	margin-bottom: 4vh;
+}
+
+p.p-portfolio {
+	display: none;
+}
+
 }
