@@ -24,9 +24,6 @@ nav.web-nav {
 	display: none;
 }
 
-nav.mobile-nav {
-	display: none;
-}
 
 
 span.home {
@@ -67,6 +64,10 @@ section.index-s {
 	position: absolute;
 	left: 59.10vw;
 	top: 45.41vh;
+}
+
+section.index-s h2 {
+	text-decoration: underline;
 }
 
 section.index-s h2, section.index-s article {
@@ -111,6 +112,10 @@ p.p-index {
 	font-size: 3vmin;
 }
 
+a:link, a:hover, a:visited, a:active {
+	color: rgb(0,0,0);
+}
+
 /*Projects page*/
 
 /*Using index page nav styling*/
@@ -148,6 +153,10 @@ section.s-portfolio {
 	left: 27vw;
 	top: 23vh;
 	width: 43.5vw;
+}
+
+article h3 span {
+	cursor:pointer;
 }
 
 article img {
@@ -198,14 +207,14 @@ article img:hover {
 and (orientation: portrait) {
 	
 	/* index page*/
-  body.index {
+body.index {
 	background-color: rgb(255,243,235);
 	background-image: none;
 }
 
 span.home {
 	display: inline-block;
-	padding-left: 5vw;
+	padding-left: 8vw;
 	width: 48.4vw;
 }
 
@@ -213,7 +222,7 @@ span {
 	display: inline-block;
 	height: 10vh;
 	width: calc(100vw-48.4vw);
-	text-align: center;
+	text-align: left;
 }
 
 img.moon-h {

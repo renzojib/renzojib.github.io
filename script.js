@@ -1,12 +1,14 @@
 window.onload = () => {
-	btn = document.getElementById("btn")
-	home = document.getElementById("home")
-	projects = document.getElementById("projects")
-	about = document.getElementById("about")
-	sPortfolio = document.getElementById("s-portfolio")
-	nav = document.querySelector("nav")
-	navStyle = window.getComputedStyle(nav)
-	navHt = navStyle.getPropertyValue("height")
+	var btn = document.getElementById("btn")
+	var home = document.getElementById("home")
+	var projects = document.getElementById("projects")
+	var about = document.getElementById("about")
+	var sPortfolio = document.getElementById("s-portfolio")
+	var nav = document.querySelector("nav")
+	var navStyle = window.getComputedStyle(nav)
+	var navHt = navStyle.getPropertyValue("height")
+	var cr = document.getElementById("cr")
+	var crm = document.getElementById("crm")
 	
 	if(btn) {
 		btn.onclick = () => {
@@ -25,6 +27,15 @@ window.onload = () => {
 	about.onclick = () => {
 		open("index.html", "_self")
 	}
+	
+	cr.onclick = () => {
+		open("https://www.figma.com/proto/cNGxMQPOO1jIyQsC2L6Y95/Ridgeline?scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A3&node-id=5%3A3")
+	}
+	
+	crm.onclick = () => {
+		open("https://renzojib.pythonanywhere.com/cdde/default/index")
+	}
+	
 	//--------------
 	
 	(function(){
