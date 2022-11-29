@@ -48,6 +48,7 @@ window.onload = () => {
 	
 	if(window.screen.width < 480) {
 		menuOpen.onclick = () => {
+			nav.style.height = "max(1024px,100vh)";
 			nav.style.textAlign = "center";
 			nav.style.backgroundColor = "rgb(0,0,0)";
 			navUl.style.display = "block";
@@ -61,6 +62,7 @@ window.onload = () => {
 		};
 		
 		function menuCls() {
+				nav.style.height = "max(512px,50vh)";
 				nav.style.textAlign = "right";
 				nav.style.backgroundColor = "transparent";
 				navUl.style.display = "none";
@@ -78,6 +80,7 @@ window.onload = () => {
 		projectsA.addEventListener("click", menuCls);
 		
 		aboutA.onclick = () => {
+				nav.style.height = "max(512px,50vh)";
 				nav.style.textAlign = "right";
 				nav.style.backgroundColor = "transparent";
 				navUl.style.display = "none";
