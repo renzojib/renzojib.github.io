@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/*Index page*/
+body.index {
+	background-color: rgb(255,243,235);
+	background-image: URL("images/Dark-shade.png");
+	background-size: 100vw 100vh;
+}
+
+nav.web-nav {
+	height: 10vh;
+	width: 100vw;
+	margin-top: 4.16vh;
+}
+
+.menu-home {
+	display: none;
+}
+
+
+
+span.home {
+	display: inline-block;
+	padding-left: 5vw;
+	width: 48.4vw;
+}
+
+span {
+	display: inline-block;
+	height: 10vh;
+	width: calc(100vw-48.4vw);
+}
+
+a.projects {
+	margin-right: 3.05vw;
+}
+
+img.picture {
+	position: absolute;
+	left: 17.29vw;
+	top: 24.21vh;
+	/*height: 20.61vh;*/
+	width: 12.86vw;
+}
+
+img.moon-h {
+	position: absolute;
+	left: 90vw;
+	top: 10.16vh;
+	/*height: 19.82vh;*/
+	width: 7.31vw;
+}
+
+section.index-s {
+	height: 36.59vh;
+	width: 35.42vw;
+	position: absolute;
+	left: 59.10vw;
+	top: 45.41vh;
+}
+
+section.index-s h2 {
+	text-decoration: underline;
+}
+
+section.index-s h2, section.index-s article {
+	margin-bottom: 5vh;
+}
+
+section.index-s button {
+	border: .1vmin solid rgb(255,255,255);
+	border-radius: 10px;
+	height: 3.71vh;
+	margin-left: 11.88vw;
+	/*width: 8.68vw;*/
+}
+
+p.p-index {
+	position: absolute;
+	left: 42.71vw;
+	top: 93.16vh;
+}
+
+/* End Index Page*/
+.text-spectral {
+	font-family: Spectral, Georgia, Serif;
+}
+.text-poppins {
+	font-family: Poppins;
+}
+
+.text-sb {
+	font-weight: 700;
+}
+
+.text-m {
+	font-weight: 500;
+}
+
+.text-fs2 {
+	font-size: 2vmin;
+}
+
+.text-fs3 {
+	font-size: 3vmin;
+}
+
+a:link, a:hover, a:visited, a:active {
+	color: rgb(0,0,0);
+}
+
+/*Projects page*/
+
+/*Using index page nav styling*/
+
+nav.web-nav {
+	position: fixed;
+	z-index: 10;
+}
+
+body.portfolio {
+	background-color: rgb(255,243,235);
+	background-image: URL("images/Dark-shade-i.png");
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img.moon-f {
+	position: fixed;
+	left: 9vw;
+	top: 10.35vh;
+	/*height: 19.82vh;*/
+	width: 12vw;
+}
+
+/*h3.header {
+	position: fixed;
+	left: 9.6vw;
+	top: 19.5vh;
+}
+*/
+
+section.s-portfolio {
+	position: absolute;
+	left: 27vw;
+	top: 23vh;
+	width: 43.5vw;
+}
+
+article h3 span {
+	cursor:pointer;
+}
+
+article img {
+	border: .vmin solid rgb(255,243,235);
+	border-radius: 10px;
+	margin-left: 17.5%;
+	width: 18vw;
+}
+
+article p {
+	margin: 5vh 0;
+}
+
+p.p-portfolio {
+	position: fixed;
+	transform: rotate(-90deg);
+	left: 88vw;
+	top: 50vh;
+}
+
+/* all anchors*/
+a:hover {
+	cursor: pointer;
+	font-size: 3.2vmin;
+}
+
+section.index-s button:hover {
+	cursor: pointer;
+	background-color: white;
+}
+
+@keyframes animg {
+	from {width: 12.86vw;}
+	to {width: 13.86vw;
+	transform: rotate(360deg);}
+}
+
+img.picture:hover {
+	animation-name: animg;
+	animation-duration: 2s;
+}
+
+article img:hover {
+	width: 25vw;
+}
+/* mobile view begin*/
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+	
+	/* index page*/
+body.index {
+	background-color: rgb(255,243,235);
+	background-image: none;
+}
+
+span.home {
+	display: inline-block;
+	padding-left: 8vw;
+	width: 48.4vw;
+}
+
+span {
+	display: inline-block;
+	height: 10vh;
+	width: calc(100vw-48.4vw);
+	text-align: left;
+}
+
+img.moon-h {
+	display: none;
+}
+
+img.picture {
+	position: relative;
+	/*height: 20.61vh;*/
+	left: 0;
+	top: 18vh;
+	width: 50vw;
+	margin: 0 25vw;
+
+}
+
+section.index-s {
+	position: relative;
+	left: 0;
+	top: 25vh;
+	width: 80vw;
+	margin: 0 10vw;
+}
+
+section.index-s button {
+	border: .1vmin solid rgb(170,115,76);
+	background-color: rgb(170,115,76);
+	border-radius: 15px;
+	height: 3.71vh;
+	margin: 0 40%;
+	width: 28%;
+}
+
+p.p-index {
+	position: relative;
+	left: 0;
+	top: 32vh;
+	text-align: center;
+}
+
+@keyframes animgm {
+	from {width: 50vw;}
+	to {width: 50vw;
+	transform: rotate(360deg);}
+}
+
+img.picture:hover {
+	animation-name: animgm;
+	animation-duration: 2s;
+}
+
+.text-spectral {
+	font-family: Spectral, Georgia, Serif;
+}
+.text-poppins {
+	font-family: Poppins;
+}
+
+.text-sb {
+	font-weight: 700;
+}
+
+.text-m {
+	font-weight: 500;
+}
+
+.text-fs2 {
+	font-size: 3vmin;
+}
+
+.text-fs3 {
+	font-size: 4vmin;
+}
+
+.text-fs3-5 {
+	font-size: 3.5vmin;
+}
+
+.text-fs5 {
+	font-size: 5vmin;
+}
+
+/*Projects page*/
+
+/*Using index page nav styling*/
+
+img.moon-f {
+	position: fixed;
+	left: 4vw;
+	top: 10.35vh;
+	/*height: 19.82vh;*/
+	width: 18vw;
+}
+
+section.s-portfolio {
+	position: absolute;
+	left: 23vw;
+	top: 18vh;
+	width: 65vw;
+}
+
+article img {
+	border: .vmin solid rgb(255,243,235);
+	border-radius: 10px;
+	margin-left: 10%;
+	width: 70%;
+}
+
+article img:hover {
+	width: 80%;
+}
+
+article h3 {
+	height: 3vh;
+	margin-bottom: 4vh;
+}
+
+p.p-portfolio {
+	display: none;
+}
+
+
+}

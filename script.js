@@ -1,40 +1,98 @@
 window.onload = () => {
-	var btn = document.getElementById("btn")
-	var home = document.getElementById("home")
-	var projects = document.getElementById("projects")
-	var about = document.getElementById("about")
-	var sPortfolio = document.getElementById("s-portfolio")
-	var nav = document.querySelector("nav")
-	var navStyle = window.getComputedStyle(nav)
-	var navHt = navStyle.getPropertyValue("height")
-	var cr = document.getElementById("cr")
-	var crm = document.getElementById("crm")
+	var nav = document.getElementById("nav");
+	var navUl = document.getElementById("nav-list");
+	var homeA = document.getElementById("home-a");
+	var oldiesA = document.getElementById("oldies-a");
+	var projectsA = document.getElementById("projects-a");
+	var aboutA = document.getElementById("about-a");
+	var menuOpen = document.getElementById("nav-img-open");
+	var menuClose = document.getElementById("nav-img-close");
+	var aboutH2 = document.getElementById("about-h2");
+	var aboutP = document.getElementById("about-p");
+	var contact = document.getElementById("contact");
+	var project1 = document.getElementById("view-project1");
+	var project2 = document.getElementById("view-project2");
+	var oldies2022 = document.getElementById("2022");
+	var oldies2023 = document.getElementById("2023");
+	var tbc = document.getElementById("tbc");
 	
-	if(btn) {
-		btn.onclick = () => {
+	contact.onclick = () => {
 		open("mailto:ojibaebuka@yahoo.com")
 	}
+	
+	project1.onclick = () => {
+		open("https://renzojib.pythonanywhere.com/cdde/default/index")
 	}
 	
-	home.onclick = () => {
-		open("index.html", "_self")
-	}
-	
-	projects.onclick = () => {
-		open("projects.html", "_self")
-	}
-	
-	about.onclick = () => {
-		open("index.html", "_self")
-	}
-	
-	cr.onclick = () => {
+	project2.onclick = () => {
 		open("https://www.figma.com/proto/cNGxMQPOO1jIyQsC2L6Y95/Ridgeline?scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A3&node-id=5%3A3")
 	}
 	
-	crm.onclick = () => {
-		open("https://renzojib.pythonanywhere.com/cdde/default/index")
+	oldies2022.onclick = () => {
+		open("oldies/2022/index.html","_self");
 	}
+	
+	oldies2023.onclick = () => {
+		if(window.screen.width < 480) {
+			tbc.style.fontSize = "4rem"
+		}
+		tbc.style.textShadow = "rgb(255,255,255) 1px -3px 4px";
+	}
+	
+	oldies2023.onmouseout = () => {
+		if(window.screen.width < 480) {
+			tbc.style.fontSize = "3rem"
+		}
+		tbc.style.textShadow = "none";
+	}
+	
+	if(window.screen.width < 480) {
+		menuOpen.onclick = () => {
+			nav.style.textAlign = "center";
+			nav.style.backgroundColor = "rgb(0,0,0)";
+			navUl.style.display = "block";
+			menuOpen.style.display = "none";
+			menuClose.style.display = "inline-block";
+			homeA.style.color = "rgb(255,255,255)";
+			oldiesA.style.color = "rgb(255,255,255)";
+			projectsA.style.color = "rgb(255,255,255)";
+			aboutA.style.color = "rgb(255,255,255)";
+			
+		};
+		
+		function menuCls() {
+				nav.style.textAlign = "right";
+				nav.style.backgroundColor = "transparent";
+				navUl.style.display = "none";
+				menuOpen.style.display = "inline-block";
+				menuClose.style.display = "none";
+				homeA.style.color = "rgb(0,0,0)";
+				oldiesA.style.color = "rgb(0,0,0)";
+				projectsA.style.color = "rgb(0,0,0)";
+				aboutA.style.color = "rgb(0,0,0)";
+		}
+		
+		menuClose.addEventListener("click", menuCls);
+		homeA.addEventListener("click", menuCls);
+		oldiesA.addEventListener("click", menuCls);
+		projectsA.addEventListener("click", menuCls);
+		
+		aboutA.onclick = () => {
+				nav.style.textAlign = "right";
+				nav.style.backgroundColor = "transparent";
+				navUl.style.display = "none";
+				menuOpen.style.display = "inline-block";
+				menuClose.style.display = "none";
+				homeA.style.color = "rgb(0,0,0)";
+				oldiesA.style.color = "rgb(0,0,0)";
+				projectsA.style.color = "rgb(0,0,0)";
+				aboutA.style.color = "rgb(0,0,0)";
+				aboutH2.style.fontSize = "6rem"
+				aboutP.style.fontSize = "2.5rem"
+				
+		};
+	}
+	
 	
 	//--------------
 	
@@ -69,7 +127,7 @@ window.onload = () => {
     */
 
     var toggled;
-    var threshold = 100;
+    var threshold = 30;
 
     var checkScroll = function() {
         curScroll = w.scrollY || doc.scrollTop;
@@ -95,18 +153,40 @@ window.onload = () => {
     var toggleHeader = function() { 
         toggled = true;
         if(curDirection === 2 && curScroll > threshold) {
-            nav.style.visibility = "hidden"
+            nav.style.position = "fixed";
+            nav.style.width = "100vw";
+			homeA.style.color = "rgb(255,255,255)";
+			oldiesA.style.color = "rgb(255,255,255)";
+			projectsA.style.color = "rgb(255,255,255)";
+			aboutA.style.color = "rgb(255,255,255)";
+			nav.style.backgroundColor = "rgb(0,0,0)";
+			nav.style.opacity = "0.3";
+			
+			nav.onmouseover = ()=> {
+				nav.style.opacity = "1"
+			}
         }
         else if (curDirection === 1) {
-            nav.style.visibility = "visible"
+            nav.style.position = "absolute";
+            nav.style.width = "70vw";
+			homeA.style.color = "rgb(0,0,0)";
+			oldiesA.style.color = "rgb(0,0,0)";
+			projectsA.style.color = "rgb(0,0,0)";
+			aboutA.style.color = "rgb(0,0,0)";
+			nav.style.backgroundColor = "transparent";
+			nav.style.opacity = "1"
+			
+			
         }
         else {
             toggled = false;
         }
         return toggled;
     };
-
-    window.addEventListener('scroll', checkScroll);
+	if(window.screen.width > 480) {
+		window.addEventListener('scroll', checkScroll);
+	}
+    
 
 })();
 }

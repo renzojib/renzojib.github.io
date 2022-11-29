@@ -8,27 +8,54 @@
 		<script src="script.js" type="text/javascript"></script>
 	</head>
 	<body class="index">
-		<nav class="web-nav">
-			<span class="home">
-				<a id="home" class="home text-poppins text-fs2 text-sb">Home</a>
-			</span>
-			<span>
-				<a id="projects" class="projects text-poppins text-fs2 text-sb">Projects</a>
-				<!--<a  id="about" class="text-poppins text-fs2 text-sb">About</a>-->
-			</span>
+		<div class="first"></div>
+		<div class="second"></div>
+		<div class="last"></div>
+		<nav id="nav">
+			<img id="nav-img-open" class="nav-img-open" src="images/menu.png" alt="menu icon"/>
+			<img id="nav-img-close" class="nav-img-close" src="images/Close.png" alt="close menu icon"/>
+			<ul id="nav-list">
+				<li class="home-li"><a id="home-a" href="index.html">Home</a></li>
+				<li class="other-li"><a id="oldies-a" href="#oldies">Oldies</a></li>
+				<li class="other-li"><a id="projects-a" href="#projects">Projects</a></li>
+				<li class="other-li"><a id="about-a">About</a></li>	
+			</ul>
 		</nav>
-		<img class="picture" src="images/Picture.png"/>
-		<img class="moon-h" src="images/moon-h.png"/>
-		<section class="index-s">
-			<h2 class="text-spectral text-fs5">Who is Ebuka?</h2>
-			
-			<article id="info">
-				<p class="text-spectral text-fs2 text-sb">A goal-driven Full-Stack Developer with a knack for problem solving. Ebuka is a recent graduate of Tri-C's Cleveland Codes Software developers Academy with back-end and front-end skills in Javascript, Python, CSS, Bootstrap, mySQL and Wix and Shopify. </p>
-			</article>
-			
-			<button type="button" id="btn" class="text-poppins text-fs2 text-sb">Contact me</button>
+		<section class="body">
+			<section id="about">
+				<figure class="main-pic">
+					<img src="images/Picture.png" alt="picture of Ebuka"/>
+				</figure>
+				<article class="about">
+					<h2 id="about-h2">Who Is Ebuka?</h2>
+					<p id="about-p">A goal-driven Full-Stack Developer with a knack for problem solving. Ebuka is a recent graduate of Cleveland Codes Software developers Academy with back-end and front-end skills in mySQL, Web2py, Javascript, Python, CSS, Bootstrap, Figma, Wix and Shopify.</p>
+					<button type="button" id="contact" class="contact">Contact me</button>
+				</article>
+			</section>
+			<section id="projects" class="projects">
+				<article class="project1">
+					<h3>Cleveland Codes - CRM project</h3>
+					<p class="text-spectral text-fs2 text-sb">Contact management system created as a capstone project for the Cleveland Codes Software Academy Bootcamp. Completed in collaboration <a href="https://www.linkedin.com/in/craig-dansby-east-6153b774/">Craig Dansby East</a>, <a href="https://www.linkedin.com/in/deon-kidd-2b307792/">Deon Kidd</a> and <a href="https://www.linkedin.com/in/david-hegedus-8a61512a/">David Hegedus</a>.</p>
+					<button type="button" id="view-project1" class="view-project1">View Project</button>
+				</article>
+				<article class="project2">
+					<h3>Codecademy - Ridgeline project</h3>
+					<p> A Codecademy project to create a product detail page of Ridgeline, a popular outdoor clothing company. This is a UI/UX project that starts off from a low - fidelity wireframe to a high - fidelity working prototype on figma.</p>
+					<button type="button" id="view-project2" class="view-project2">View Project</button>
+				</article>
+			</section>
+			<section id="oldies" class="oldies">
+				<article class="oldies">
+					<hr class="top-hr"/>
+					<h3><span id="2022" class="p-year">2022</span><span id="2023"  class="p-year">2023</span> <span id="tbc" class="tbc">...to be continued</span></h3>
+					<hr class="bottom-hr"/>
+				</article>
+				<footer>
+					<p>ojibaebuka@gmail.com</p>
+					<a href="https://github.com/renzojib"><img src="images/github.png"/></a>
+					<a href="https://www.linkedin.com/in/ebuka-ojiba-874886a8/"><img src="images/linkedin.png"/></a>
+				</footer>
+			</section>
 		</section>
-		
-		<p class="text-spectral text-fs3 text-sb p-index">ojibaebuka@gmail.com</p>
 	</body>
 </html>
