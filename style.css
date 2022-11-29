@@ -490,11 +490,11 @@ section.projects {
 
 article.project1 {
 	position: relative;
-	top: max(102.4px, 10vh);
+	top: max(51.2px, 5vh);
 	left: max(24px,5vw);
 	color: white;
 	text-shadow: none;
-	width: 35vw;
+	width: 40vw;
 	height: max(614.4px,60vh);
 }
 
@@ -533,7 +533,7 @@ a:link, a:hover, a:visited, a:active {
 
 article.project2 {
 	position: relative;
-	top: max(307.2px,30vh);
+	top: max(204.8px,20vh);
 	left: max(72px,15vw);
 	color: white;
 	width: 40vw;
