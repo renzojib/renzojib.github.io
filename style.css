@@ -178,6 +178,7 @@ article p {
 .contact {
 	color: rgb(255,255,255);
 	background-color: rgb(186,137,110);
+	font-size: 1rem;
 	margin: max(31px,3vh) 0 0 30%;
 	border: .1vw solid rgb(186,137,110);
 	border-radius: 10px;
@@ -187,6 +188,7 @@ article p {
 .contact:hover {
 	color: rgb(0,0,0);
 	background-color: rgb(255,255,255);
+	font-size: 1rem;
 	margin: max(31px,3vh) 0 0 30%;
 	border: .1vw solid rgb(255,255,255);
 	border-radius: 10px;
@@ -213,6 +215,7 @@ article.project1 p {
 .view-project1 {
 	color: rgb(255,255,255);
 	background-color: rgb(0,0,0);
+	font-size: 1rem;
 	margin: max(51px,5vh) 0 0 20%;
 	border: .1vw solid rgb(0,0,0);
 	border-radius: 10px;
@@ -222,6 +225,7 @@ article.project1 p {
 .view-project1:hover {
 	color: rgb(0,0,0);
 	background-color: rgb(255,255,255);
+	font-size: 1rem;
 	margin: max(51px,5vh) 0 0 20%;
 	border: .1vw solid rgb(255,255,255);
 	border-radius: 10px;
@@ -250,6 +254,7 @@ article.project2 p {
 .view-project2 {
 	color: rgb(0,0,0);
 	background-color: rgb(255,255,255);
+	font-size: 1rem;
 	margin: max(51px,5vh) 0 0 20%;
 	border: .1vw solid rgb(255,255,255);
 	border-radius: 10px;
@@ -259,6 +264,7 @@ article.project2 p {
 .view-project2:hover {
 	color: rgb(255,255,255);
 	background-color: rgb(186,137,110);
+	font-size: 1rem;
 	margin: max(51px,5vh) 0 0 20%;
 	border: .1vw solid rgb(186,137,110);
 	border-radius: 10px;
@@ -291,11 +297,17 @@ article.oldies h3{
 }
 
 article.oldies h3 span.p-year{
-	margin: 1vw;
+	padding: 0 1vw;
+	text-decoration:underline;
+	border-right: 2px solid rgb(255,255,255);
 }
 
 article.oldies h3 span.p-year:hover{
 	cursor: pointer;
+}
+
+.tbc {
+	padding: 0 1vw;
 }
 
 article.oldies .bottom-hr {
@@ -330,7 +342,7 @@ footer img {
 }
 
 /*Mobile*/
-@media screen and (max-device-width: 480px) and (orientation: portrait) {
+@media screen and (max-device-width: 480px) {
 	/*Background shapes*/
 .first, .second, .last {
 	display: none;
@@ -357,7 +369,7 @@ ul {
 nav .nav-img-open {
 	display: inline-block;
 	margin: max(153.6px, 15vw) 10vw 0 0;
-	width: 20vw;
+	width: 15vw;
 }
 
 nav .nav-img-close {
@@ -365,7 +377,7 @@ nav .nav-img-close {
 	left: 30vw;
 	display: none;
 	margin: max(153.6px, 15vw) 0 0 0;
-	width: 15vw;
+	width: 10vw;
 }
 
 nav ul li {
@@ -462,7 +474,7 @@ article p {
 .contact {
 	color: rgb(255,255,255);
 	background-color: rgb(186,137,110);
-	margin: max(51.2px,5vh) 0 0 40%;
+	margin: max(51.2px,5vh) 0 0 37.5vw;
 	font-size: 2rem;
 	border: .1vw solid rgb(186,137,110);
 	border-radius: 10px;
@@ -580,7 +592,7 @@ article.oldies {
 article.oldies .top-hr {
 	width: 70%;
 	margin-right: 30%;
-	border: 6px solid white;
+	border: 6px solid rgb(255,255,255);
 	border-radius: 0 5px 5px 0;
 }
 
@@ -596,10 +608,13 @@ article.oldies h3{
 }
 
 article.oldies h3 span.p-year{
-	margin: 1vw;
+	padding: 0 1vw;
+	text-decoration:underline;
+	border-right: 4px solid rgb(255,255,255);
 }
 
 .tbc {
+	padding: 0 1vw;
 	transition-property: font-size;
 	transition-duration: 2s;
 }

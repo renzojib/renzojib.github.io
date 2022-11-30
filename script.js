@@ -1,3 +1,6 @@
+window.addEventListener("resize", (e) => {
+	e.target.location.reload(false)
+});
 window.onload = () => {
 	var nav = document.getElementById("nav");
 	var navUl = document.getElementById("nav-list");
@@ -13,8 +16,8 @@ window.onload = () => {
 	var project1 = document.getElementById("view-project1");
 	var project2 = document.getElementById("view-project2");
 	var oldies2022 = document.getElementById("2022");
-	var oldies2023 = document.getElementById("2023");
-	var tbc = document.getElementById("tbc");
+	//var oldies2023 = document.getElementById("2023");
+	//var tbc = document.getElementById("tbc");
 	
 	contact.onclick = () => {
 		open("mailto:ojibaebuka@yahoo.com")
@@ -32,7 +35,7 @@ window.onload = () => {
 		open("oldies/2022/index.html","_self");
 	}
 	
-	oldies2023.onclick = () => {
+	/*oldies2023.onclick = () => {
 		if(window.screen.width < 480) {
 			tbc.style.fontSize = "4rem"
 		}
@@ -44,7 +47,7 @@ window.onload = () => {
 			tbc.style.fontSize = "3rem"
 		}
 		tbc.style.textShadow = "none";
-	}
+	}*/
 	
 	if(window.screen.width < 480) {
 		menuOpen.onclick = () => {
