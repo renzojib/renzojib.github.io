@@ -151,7 +151,7 @@ figure.main-pic img {
 
 article.about {
 	position: relative;
-	top: max(307px,30vh);
+	top: max(358.4px,35vh);
 	left: 58vw;
 	color: white;
 	width: 30vw;
@@ -168,12 +168,12 @@ article h2 {
 article h3 {
 	margin-bottom: max(31px,3vh);
 	/*font-size: 2vw;*/
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 }
 
 article p {
 	/*font-size: 1vw;*/
-	font-size: 1rem;
+	font-size: 1.3rem;
 }
 .contact {
 	color: rgb(255,255,255);
@@ -207,7 +207,7 @@ article.project1 {
 }
 
 article.project1 p {
-	width: 60%;
+	width: 70%;
 }
 
 .view-project1 {
@@ -244,7 +244,7 @@ article.project2 {
 }
 
 article.project2 p {
-	width: 60%;
+	width: 70%;
 }
 
 .view-project2 {
@@ -467,7 +467,7 @@ article p {
 	border: .1vw solid rgb(186,137,110);
 	border-radius: 10px;
 	height: max(31px,3vh);
-	width: max(96px, 20vw);
+	width: max(120px, 25vw);
 }
 
 .contact:hover {
@@ -478,7 +478,7 @@ article p {
 	border: .1vw solid rgb(186,137,110);
 	border-radius: 10px;
 	height: max(31px,3vh);
-	width: max(96px, 20vw);
+	width: max(120px, 25vw);
 }
 
 section.projects {
@@ -511,7 +511,7 @@ article.project1 p {
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px rgb(255,255,255), -5px -5px 5px rgb(255,255,255);
 	height: max(31px,3vh);
-	width: max(96px, 20vw);
+	width: max(120px, 25vw);
 }
 
 .view-project1:hover {
@@ -523,7 +523,7 @@ article.project1 p {
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px rgb(255,255,255), -5px -5px 5px rgb(255,255,255);
 	height: max(31px,3vh);
-	width: max(96px, 20vw);
+	width: max(120px, 25vw);
 }
 
 a:link, a:hover, a:visited, a:active {
@@ -554,7 +554,7 @@ article.project2 p {
 	box-shadow: 5px 5px 5px rgb(255,255,255), -5px -5px 5px rgb(255,255,255);
 	height: max(31px,3vh);
 	width: max(96px, 20vw);
-	width: max(96px, 20vw);
+	width: max(120px, 25vw);
 }
 
 .view-project2:hover {
@@ -566,7 +566,7 @@ article.project2 p {
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px rgb(255,255,255), -5px -5px 5px rgb(255,255,255);
 	height: max(31px,3vh);
-	width: max(96px, 20vw);
+	width: max(120px, 25vw);
 }
 section.oldies {
 	background-color: rgb(67,19,25);
