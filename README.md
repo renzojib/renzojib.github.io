@@ -6,8 +6,8 @@
 ### Hi!
 
 #### I  am Ebuka Ojiba, this is my portfolio and few of my projects.
-####check it out [here](www.ebukaojiba.com)😉.
+#### heck it out [here](www.ebukaojiba.com)😉.
 
---
+----
 
-####Please check back for new-feature updates####
+#### lease check back for new-feature updates####
